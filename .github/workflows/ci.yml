@@ -14,11 +14,13 @@ name: CI — Python
 on:
   push:
     branches:
+      - master
       - main
       - "feature/**"     # ← cualquier rama que empiece con feature/
   pull_request:
     branches:
       - main
+      - master
 
 # Cancelar runs anteriores del mismo PR para ahorrar minutos
 concurrency:
